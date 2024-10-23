@@ -350,7 +350,7 @@
 #define ego_sensor_e_ES_Innovate_MTX_L 1
 #define ego_sensor_e_ES_PLX 4
 #define EGT_CHANNEL_COUNT 8
-#define END_OF_CALIBRATION_PADDING 128
+#define END_OF_CALIBRATION_PADDING 116
 #define engine_configuration_s_size 4024
 #define engine_load_mode_e_auto_enum 0="LM_SPEED_DENSITY",2="LM_ALPHA_N",3="LM_LUA",100="LM_MOCK",1="LM_REAL_MAF"
 #define engine_load_mode_e_enum "Speed Density", "MAF Air Charge", "Alpha-N", "Lua"
@@ -551,7 +551,7 @@
 #define GAUGE_NAME_CAN_WRITE_OK "CAN: Tx OK"
 #define GAUGE_NAME_CLT "CLT"
 #define GAUGE_NAME_CPU_TEMP "CPU Temperature"
-#define GAUGE_NAME_CURRENT_GEAR "Current Gear"
+#define GAUGE_NAME_CURRENT_GEAR "TCU: Current Gear"
 #define GAUGE_NAME_DEBUG_F1 "debug f1"
 #define GAUGE_NAME_DEBUG_F2 "debug f2: iTerm"
 #define GAUGE_NAME_DEBUG_F3 "debug f3: prevError"
@@ -1252,7 +1252,6 @@
 #define PROTOCOL_HELLO_PREFIX "***"
 #define PROTOCOL_INJ_SHORT_PREFIX "i"
 #define PROTOCOL_INJ_STAGE2_SHORT_PREFIX "j"
-#define PROTOCOL_KNOCK_SPECTROGRAMM "knock_spectrogram"
 #define PROTOCOL_MSG "msg"
 #define PROTOCOL_OUTPIN "outpin"
 #define PROTOCOL_SIGNATURE_PREFIX "rusEFI "
@@ -1293,8 +1292,9 @@
 #define SentEtbType_FORD_TYPE_1 2
 #define SentEtbType_GM_TYPE_1 1
 #define SentEtbType_NONE 0
+#define show_tcu_gauges false
 #define show_vvt_output_pin true
-#define SIGNATURE_HASH 2855450897
+#define SIGNATURE_HASH 2107258010
 #define SIMULATOR_TUNE_BIN_FILE_NAME "generated/simulator_tune_image.bin"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_PREFIX "generated/simulator_tune_image"
 #define SIMULATOR_TUNE_BIN_FILE_NAME_SUFFIX ".bin"
@@ -1569,10 +1569,6 @@
 #define TS_HELLO_COMMAND_char S
 #define TS_IO_TEST_COMMAND 'Z'
 #define TS_IO_TEST_COMMAND_char Z
-#define TS_KNOCK_SPECTROGRAM_DISABLE 'n'
-#define TS_KNOCK_SPECTROGRAM_DISABLE_char n
-#define TS_KNOCK_SPECTROGRAM_ENABLE 'm'
-#define TS_KNOCK_SPECTROGRAM_ENABLE_char m
 #define TS_ONLINE_PROTOCOL 'z'
 #define TS_ONLINE_PROTOCOL_char z
 #define TS_OUTPUT_COMMAND 'O'
@@ -1758,14 +1754,14 @@
 #define ts_show_wastegate_sensor true
 #define ts_show_wbo_canbus_index true
 #define ts_show_wbo_canbus_set_index true
-#define TS_SIGNATURE "rusEFI main.2024.10.20.ZedTest.2855450897"
+#define TS_SIGNATURE "rusEFI main.2024.10.23.ZedTest.2107258010"
 #define TS_SIMULATE_CAN '>'
 #define TS_SIMULATE_CAN_char >
 #define TS_SINGLE_WRITE_COMMAND 'W'
 #define TS_SINGLE_WRITE_COMMAND_char W
 #define TS_TEST_COMMAND 't'
 #define TS_TEST_COMMAND_char t
-#define TS_TOTAL_OUTPUT_SIZE 1752
+#define TS_TOTAL_OUTPUT_SIZE 1824
 #define TS_TRIGGER_SCOPE_CHANNEL_1_NAME "Channel 1"
 #define TS_TRIGGER_SCOPE_CHANNEL_2_NAME "Channel 2"
 #define TS_TRIGGER_SCOPE_DISABLE 5
